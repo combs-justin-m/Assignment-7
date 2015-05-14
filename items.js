@@ -1024,5 +1024,3 @@ var items = [{
   "has_variations": false,
   "used_manufacturer": false
 }];
-Status API Training Shop Blog About
-© 2015 GitHub, Inc. Terms Privacy Security Contact

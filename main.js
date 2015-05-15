@@ -70,3 +70,11 @@ eightMats.forEach(function(list){
 //     list.materials;
 // });
 
+///////// Question 6 /////////
+var seller = items.filter(function(item){
+  if (item.who_made === "i_did")
+    return item;
+});
+
+$answer6 = document.querySelector('#answer6');
+$answer6.textContent = seller.length + ' were made by their sellers';

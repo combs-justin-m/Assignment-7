@@ -36,8 +36,7 @@ document.querySelector('#answer3').textContent = gbp[0].title + ' costs £' + gb
 
 ///////// Question 4 /////////
 var wood = items.filter(function(item){
-  if (item.materials.indexOf('wood') >= 0)
-    return item;
+  return item.materials.indexOf('wood') >= 0;
 });
 
 var $answer4 = document.querySelector('#answer4');
@@ -49,8 +48,7 @@ wood.forEach(function(list){
 
 ///////// Question 5 /////////
 var eightMats = items.filter(function(item){
-  if (item.materials.length >= 8)
-    return item;
+  return item.materials.length >= 8;
 });
 
 var $answer5 = document.querySelector('#answer5');
@@ -65,8 +63,7 @@ eightMats.forEach(function(list){
 
 ///////// Question 6 /////////
 var seller = items.filter(function(item){
-  if (item.who_made === "i_did")
-    return item;
+  return item.who_made === "i_did";
 });
 
 $answer6 = document.querySelector('#answer6');

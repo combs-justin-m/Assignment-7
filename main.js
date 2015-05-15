@@ -37,4 +37,21 @@ var gbp = items.filter(function(item){
   return item.currency_code === "GBP";
 });
 
-document.querySelector('#answer3').textContent = gbp[0].title;
+document.querySelector('#answer3').textContent = gbp[0].title + ' costs \£' + gbp[0].price;
+
+///////// Question 4 /////////
+var wood = items.filter(function(item){
+  if (item.materials.indexOf('wood') >= 0)
+    return item;
+});
+
+var $answer4 = document.querySelector('#answer4');
+$answer4.textContent = '';
+
+wood.forEach(function(list){
+  $answer4.textContent += (list.title + '\n' + '\n');
+});
+
+///////// Question 5 /////////
+
+///////// Question 6 /////////

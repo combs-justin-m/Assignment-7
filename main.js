@@ -4,13 +4,13 @@ console.log(items);
 var allPrices = items.map(function(item){
   return item.price;
 });
-// Sum //
+
 var sum = allPrices.reduce(function(a, b){
   return a + b;
 });
-// Average //
+
 var avg = sum / allPrices.length;
-// Answer //
+
 var answer1 = avg.toFixed(2);
 
 document.querySelector('#answer1').textContent = '$' + answer1;

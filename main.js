@@ -63,13 +63,6 @@ eightMats.forEach(function(list){
   });
 });
 
-// $answer5.appendChild(document.createTextNode(list.title + '\n'))
-
-
-//   $answer5.textContent += (list.title + ' has ' + list.materials.length + ' materials ' + '\n') +
-//     list.materials;
-// });
-
 ///////// Question 6 /////////
 var seller = items.filter(function(item){
   if (item.who_made === "i_did")

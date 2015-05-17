@@ -1,0 +1,44 @@
+@import 'bourbon/bourbon';
+@import 'neat/neat';
+
+$orange: #F2581D;
+$tan: #EFEFEB;
+$black: #333333;
+$gray: #888888;
+
+.container {
+  width: 1000px;
+  margin: 50px auto;
+}
+
+.question {
+  @include outer-container;
+  padding: 25px 0;
+  border-bottom: 1px solid rgba(134,134,134,1);
+}
+
+h4 {
+  margin: 0;
+  color: $black;
+  @include span-columns(3);
+}
+
+pre {
+  margin: 0;
+  @include span-columns(9);
+}
+
+
+body {
+  background: $tan;
+  color: $gray;
+}
+
+h1 {
+  margin: 30px 0;
+  color: $orange;
+}
+
+.noborder {
+  border-bottom: none;
+}
